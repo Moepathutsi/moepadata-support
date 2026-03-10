@@ -1,0 +1,32 @@
+/* Miscellaneous: */
+.tr-absolute {
+  right: 0;
+}
+
+.border-right-1 {
+  border-right: 1px solid #dee2e6;
+}
+
+.dropdown-menu-icon {
+  margin-right: 6px;
+}
+
+.replier .name {
+  left: 6px;
+}
+
+.chat-message.sender .message {
+  float: right;
+}
+
+.chat-message.sender .message-time {
+  text-align: right;
+}
+
+.users-checkboxes .profile-pic {
+  right: 0;
+}
+
+.color-wrapper input:checked ~ .check-circle:after {
+  left: -4px;
+}

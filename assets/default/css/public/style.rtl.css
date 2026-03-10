@@ -1,0 +1,61 @@
+/* General: */
+@media screen and (min-width: 767px) {
+  .cookie-popup {
+    right: 30px;
+  }
+}
+
+.btn-social {
+  text-align: right;
+}
+
+.btn-social i {
+  margin-left: 7.5px;
+}
+
+.float-right {
+  float: left;
+}
+
+
+/* Navbar: */
+.navbar-z .notifications-count {
+  margin-right: 1.625px;
+}
+
+
+/* Home: */
+.z-hero.kb-header img {
+  transform: scaleX(-1);
+}
+
+.z-hero.no-luck img {
+  margin-left: 30px;
+  transform: scaleX(-1);
+}
+
+.chat-toggle-button {
+  left: 15px;
+}
+
+.chat-box {
+  left: 45px;
+}
+
+@media screen and (max-width: 575px) {
+  .chat-toggle-button {
+    left: 10px;
+  }
+}
+
+
+.z-posts .content blockquote {
+  padding-right: 16px;
+  border-right: 3px solid;
+}
+
+
+/* Footer: */
+.footer-z .menu span:not(:last-of-type) {
+  margin-left: 12px;
+}

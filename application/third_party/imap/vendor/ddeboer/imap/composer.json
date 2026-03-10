@@ -1,0 +1,61 @@
+{
+    "name": "ddeboer/imap",
+    "description": "Object-oriented IMAP for PHP",
+    "license": "MIT",
+    "keywords": [
+        "email",
+        "mail",
+        "imap"
+    ],
+    "authors": [
+        {
+            "name": "David de Boer",
+            "email": "david@ddeboer.nl"
+        },
+        {
+            "name": "Filippo Tessarotto",
+            "email": "zoeslam@gmail.com"
+        },
+        {
+            "name": "Community contributors",
+            "homepage": "https://github.com/ddeboer/imap/graphs/contributors"
+        }
+    ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/Slamdunk"
+        },
+        {
+            "type": "paypal",
+            "url": "https://paypal.me/filippotessarotto"
+        }
+    ],
+    "require": {
+        "php": "~8.4.0 || ~8.5.0",
+        "ext-dom": "*",
+        "ext-iconv": "*",
+        "ext-imap": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "egulias/email-validator": "^4.0.4",
+        "friendsofphp/php-cs-fixer": "^3.89.0",
+        "phpstan/phpstan": "^2.1.31",
+        "phpstan/phpstan-phpunit": "^2.0.7",
+        "phpstan/phpstan-strict-rules": "^2.0.7",
+        "phpunit/phpunit": "^12.4.1",
+        "symfony/mime": "^7.3.4 || ^8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ddeboer\\Imap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ddeboer\\Imap\\Tests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+/* General: */
+@media screen and (min-width: 767px) {
+  .cookie-popup {
+    left: 30px;
+  }
+}
+
+.btn-social {
+  text-align: left;
+}
+
+.btn-social i {
+  margin-right: 7.5px;
+}
+
+.float-right {
+  float: right;
+}
+
+
+/* Home: */
+.z-hero.no-luck img {
+  margin-right: 30px;
+}
+
+.chat-toggle-button {
+  right: 15px;
+}
+
+.chat-box {
+  right: 45px;
+}
+
+@media screen and (max-width: 575px) {
+  .chat-toggle-button {
+    right: 10px;
+  }
+}
+
+
+.z-posts .content blockquote {
+  padding-left: 16px;
+  border-left: 3px solid;
+}
+
+
+/* Footer: */
+.footer-z .menu span:not(:last-of-type) {
+  margin-right: 12px;
+}

@@ -1,0 +1,129 @@
+/* General: */
+a:hover {
+  color: #6258ff;
+}
+
+.bg-sub {
+  background-color: #6258ff;
+}
+
+.text-sub {
+  color: #6258ff;
+}
+
+
+/* Theme Buttons: */
+.btn-z:not(.no-hover):hover {
+  background-color: #6258ff;
+  border-color: #6258ff;
+}
+
+.btn-z:hover,
+.btn-z:focus {
+  color: #fff !important;
+}
+
+.btn-sub {
+  color: #fff !important;
+  background-color: #6258ff !important;
+  border-color: #6258ff !important;
+}
+
+.btn-sub:hover,
+.btn-sub:active,
+.btn-sub:disabled {
+  background-color: #584fe6 !important;
+  border-color: #584fe6 !important;
+  color: #fff !important;
+}
+
+.btn-outline-sub,
+.btn-outline-sub:disabled,
+.btn-outline-sub:focus {
+  border-color: #6258ff !important;
+  color: #6258ff !important;
+}
+
+.btn-outline-sub:hover,
+.btn-outline-sub:active {
+  background-color: #6258ff !important;
+  color: #fff !important;
+}
+
+
+/* Pace: */
+.pace .pace-progress {
+  background: #6258ff;
+}
+
+.pace .pace-progress-inner {
+  box-shadow: 0 0 10px #6258ff, 0 0 5px #6258ff;
+}
+
+.pace .pace-activity {
+  border-top-color: #6258ff;
+  border-left-color: #6258ff;
+}
+
+
+/* Navbar: */
+.navbar-z .nav-link.active {
+  font-weight: 700;
+  color: #6258ff !important;
+}
+
+
+/* Posts: */
+.z-posts .content-holder a {
+  color: #6258ff;
+}
+
+.z-posts .content blockquote {
+  border-color: #6258ff;
+}
+
+
+/* FAQs: */
+.z-faqs .accordion-button:not(.collapsed) {
+  color: #6258ff;
+}
+
+.z-faqs .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236258ff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.z-faqs .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(98 88 255 / 22%);
+}
+
+
+/* Tickets: */
+.z-listing-ticket-replies .message a:not(.no-site-color) {
+  color: #6258ff;
+}
+
+
+/* @version 1.4 */
+.chat-box-body .chat-message:not(.requestor) span {
+  background-color: #eae9ff;
+}
+
+.chat-box-body .chat-message span a {
+  color: #6258ff;
+}
+
+
+/* @version 1.6 */
+.border-sub {
+  border-color: #6258ff;
+}
+
+
+/* @version 3.0 */
+.ldio-icon-inner.dark div {
+  border-color: #6258ff;
+}
+
+.btn-light.btn-simple {
+  color: #6258ff;
+}

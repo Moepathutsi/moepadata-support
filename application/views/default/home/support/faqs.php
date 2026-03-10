@@ -1,0 +1,92 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+<div class="z-faqs container mt-5 <?php echo (db_config('module_tickets') == 1) ? 'extra-height-2' : 'extra-height-1 mb-5'; ?>">
+    <div class="row mb-3">
+        <div class="col">
+            <h2 class="h4 fw-bold"><?php echo lang('faqs_detailed'); ?></h2>
+        </div>
+        <!-- /col -->
+    </div>
+    <!-- /.row -->
+    <?php if (! empty($categories)) {
+        foreach ($categories as $category) {
+            $faqs = get_faqs_by_category($category->id);
+            $i = 0; ?>
+            <div class="row row-main">
+                <div class="col">
+                    <div class="shadow-sm rounded">
+
+                        <div class="border-bottom px-4 py-3">
+                            <h5 class="fw-bold mb-0"><?php echo html_escape($category->name); ?></h5>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="accordion faq" id="faqs-<?php echo md5($category->id); ?>">
+                                <?php if (! empty($faqs)) {
+                                    foreach ($faqs as $faq) {
+                                        $i++; ?>
+                                        <div class="accordion-item">
+                                            <p class="accordion-header" id="faq-title-<?php echo md5($faq->id); ?>">
+                                                <button
+
+                                                    <?php if (EXPAND_FIRST_FAQ && $i == 1) { ?>
+                                                    class="accordion-button fw-bold"
+                                                    <?php } else { ?>
+                                                    class="accordion-button fw-bold collapsed"
+                                                    <?php } ?>
+
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-<?php echo md5($faq->id); ?>"
+                                                    aria-expanded="<?php echo (EXPAND_FIRST_FAQ && $i == 1) ? 'true' : 'false'; ?>"
+                                                    aria-controls="faq-<?php echo md5($faq->id); ?>">
+                                                    <?php echo html_escape($faq->question); ?>
+                                                </button>
+                                            </p>
+                                            <div
+                                                id="faq-<?php echo md5($faq->id); ?>"
+
+                                                <?php if (EXPAND_FIRST_FAQ && $i == 1) { ?>
+                                                class="accordion-collapse collapsed show"
+                                                <?php } else { ?>
+                                                class="accordion-collapse collapse"
+                                                <?php } ?>
+
+                                                aria-labelledby="faq-title-<?php echo md5($faq->id); ?>"
+                                                data-bs-parent="#faqs-<?php echo md5($category->id); ?>">
+                                                <div class="accordion-body">
+                                                    <?php echo strip_extra_html(do_secure($faq->answer, true)); ?>
+                                                </div>
+                                                <!-- /.accordion-body -->
+                                            </div>
+                                            <!-- /.collapse -->
+                                        </div>
+                                        <!-- /.accordion-item -->
+                                <?php }
+                                } ?>
+                            </div>
+                            <!-- /.accordion -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /col -->
+            </div>
+            <!-- /.row -->
+        <?php }
+    } else { ?>
+        <div class="row row-main">
+            <div class="col">
+                <div class="shadow-sm rounded p-4">
+                    <div class="text-center">
+                        <img class="not-found mt-2 mb-4" src="<?php illustration_by_color('not_found'); ?>" alt="">
+                        <h2 class="h4 fw-bold"><?php echo lang('no_records_found'); ?></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- /col -->
+        </div>
+        <!-- /.row -->
+    <?php } ?>
+</div>
+<!-- /.container -->
+
+<?php load_view('home/still_no_luck'); ?>

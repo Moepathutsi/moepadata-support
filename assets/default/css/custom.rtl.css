@@ -1,0 +1,65 @@
+/* iCheck: */
+[class*=icheck-]>input:first-child:checked+input[type=hidden]+label::after, 
+[class*=icheck-]>input:first-child:checked+label::after {
+  right: 15px;
+}
+
+.label-span {
+  padding-right: 30px;
+}
+
+[class*=icheck-]>label:not(.drp) {
+  padding-left: 0 !important;
+}
+
+
+/* Select2: */
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__rendered {
+  padding-right: 0;
+}
+
+.note-popover .popover-content .note-btn-group .note-table,
+.note-toolbar .note-btn-group .note-table {
+  direction: ltr;
+  right: auto;
+  bottom: auto;
+}
+
+.note-editor.note-frame.codeview .note-editing-area .note-codable,
+.note-editor.note-airframe.codeview .note-editing-area .note-codable {
+  direction: ltr;
+}
+
+
+/* Miscellaneous: */
+.border-right-1 {
+  border-left: 1px solid #dee2e6;
+}
+
+.dropdown-menu-icon {
+  margin-left: 6px;
+}
+
+.replier .name {
+  right: 6px;
+}
+
+.chat-message.sender .message {
+  float: left;
+}
+
+.chat-message.sender .message-time {
+  text-align: left;
+}
+
+.users-checkboxes .profile-pic {
+  left: 0;
+}
+
+.tr-absolute {
+  left: 0;
+}
+
+.color-wrapper input:checked ~ .check-circle:after {
+  right: -4px;
+}
