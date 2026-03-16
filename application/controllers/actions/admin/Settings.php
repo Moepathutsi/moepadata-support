@@ -144,7 +144,7 @@ class Settings extends MY_Controller
                 'site_color' => intval(post('site_color'))
             ];
 
-            if (! in_array($data['site_color'], [1, 2, 3, 4, 5])) {
+            if (! in_array($data['site_color'], [1, 2, 3, 4, 5, 6])) {
                 r_error('invalid_req');
             }
 

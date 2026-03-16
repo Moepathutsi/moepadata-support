@@ -149,6 +149,10 @@
                                             <input type="radio" name="site_color" value="2" <?php echo check_single(2, db_config('site_color')); ?>>
                                             <span class="check-circle color_2"></span>
                                         </label>
+                                        <label class="color-wrapper">
+                                            <input type="radio" name="site_color" value="6" <?php echo check_single(6, db_config('site_color')); ?>>
+                                            <span class="check-circle color_6"></span>
+                                        </label>
                                     </div>
                                     <!-- /.colors-radios -->
                                 </div>

@@ -189,6 +189,12 @@ $new_announcements = $this->Tool_model->check_for_new_announcements();
               </a>
             </li>
 
+            <li class="nav-item ms-lg-3">
+    <a class="btn btn-wide btn-outline-sub" href="<?php echo env_url('user/support/create_ticket'); ?>">
+        <?php echo lang('submit_a_ticket'); ?>
+    </a>
+</li>
+
             <?php if (get_session('impersonating')) { ?>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="<?php admin_action('users/deimpersonate'); ?>"><?php echo lang('stop_impersonating'); ?></a>

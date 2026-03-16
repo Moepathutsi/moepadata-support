@@ -1,4 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+
+
 <?php if (! is_public_page()) {
     $custom_pages = get_custom_pages(); ?>
     <footer class="footer-z bg-white pb-3 pb-lg-0 shadow">

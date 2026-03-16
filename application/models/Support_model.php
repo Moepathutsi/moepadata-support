@@ -1337,7 +1337,7 @@ class Support_model extends MY_Model
      * @param  integer $limit
      * @return object
      */
-    public function popular_topics($limit = 2)
+    public function popular_topics($limit = 6)
     {
         $data['table'] = 'articles_categories';
         $data['where']['parent_id'] = null;

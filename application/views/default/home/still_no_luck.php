@@ -18,7 +18,7 @@ if (db_config('module_tickets') == 1) {
             <div class="row">
                 <div class="col-md-8">
                     <div class="d-flex">
-                        <img class="d-none d-lg-block" src="<?php illustration_by_color('no_luck'); ?>" alt="">
+                        <!-- <img class="d-none d-lg-block" src="<?php illustration_by_color('no_luck'); ?>" alt=""> -->
                         <div class="align-self-center">
                             <h4 class="fw-bold"><?php echo lang('still_no_luck'); ?></h4>
                             <p class="mb-0"><?php echo lang('still_no_luck_tagline'); ?></p>

@@ -19,7 +19,7 @@
         <!-- /col -->
     </div>
     <!-- /.row -->
-    <div class="row row-main">
+    <div class="row row-main ">
         <?php load_view('home/support/articles_block',  ['display_category' => true]); ?>
     </div>
     <!-- /.row -->
